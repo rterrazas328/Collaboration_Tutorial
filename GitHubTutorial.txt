@@ -18,7 +18,6 @@ To start from an existing project on your local machine
 On the GitHub website
 1) Create a new repository and give it a name
 2) Within the newly created repository, copy the url (will refer to this url as URL_1)
-3) Fork a copy of this repository, and wihtin this forked copy, copy the url (will refer to this url as URL_2)
 
 On your terminal prompt
 1) type "cd name_Of_The_Project"
@@ -26,7 +25,8 @@ On your terminal prompt
 3) "git add ." to add all files in your project
 4) "git commit -m 'some message'" to commit changes
 5) "git remote add upstream paste-URL_1-here" to create remote to the main project
-6) "git remote add origin paste-URL_2-here" to create remote to your forked copy of the project
-7) "git pull upstream master" to get remote changes anyone else might've made
-8) "git push origin master" to push changes to your remote fork (not the main one)
-9)  After you push, on the GitHub website, go to your forked copy and on that page submit a pull request to the main project repository where it must be approved by the owner. When approved, the changes you submitted will be merged with the main copy. Although since you created the project you may approve yourself, but its best that someone else review your code before it's apporived.
+6) "git push origin master" to initialize the remote repository with your code
+7) "git branch development" to create a branch named development
+8) "git checkout development" to switch to that branch named development (meaning commits will now be recorded on that branch)
+9)  you can now submit changes to this branch with "git push origin development"
+10) to merge your changes with the main branch, you can submit a pull request on the GitHub website but make sure you are doing it from the correct branch (in this example, the "development" branch).

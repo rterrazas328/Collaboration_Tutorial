@@ -1,0 +1,32 @@
+To start working on an existing project on the GitHub website
+On the GitHub website
+1) Find the project Repository and fork a copy.
+2) Go to your account and find the forked copy, make note of the url at the top right and copy it.
+
+On your terminal prompt
+1) type "git clone paste-url-here"
+2) type "cd name_Of_The_Project"
+3) make changes within your fork
+4) "git add ." to add all changes (change . to filename(s) to add specific files)
+5) "git commit -m 'some message'" to commit changes
+6) "git remote add upstream url-from-main-repository" (not the url from your forked copy, the url of the project you forked from)
+7) "git pull upstream master" to get remote changes anyone else might've made
+8) "git push origin master" to push changes to your remote fork (not the main one)
+9)  After you push, on the GitHub website, go to your forked copy and on that page submit a pull request to the main project repository where it must be approved by the owner. When approved, the changes you submitted will be merged with the main copy.
+
+To start from an existing project on your local machine
+On the GitHub website
+1) Create a new repository and give it a name
+2) Within the newly created repository, copy the url (will refer to this url as URL_1)
+3) Fork a copy of this repository, and wihtin this forked copy, copy the url (will refer to this url as URL_2)
+
+On your terminal prompt
+1) type "cd name_Of_The_Project"
+2) "git init" to initialize git
+3) "git add ." to add all files in your project
+4) "git commit -m 'some message'" to commit changes
+5) "git remote add upstream paste-URL_1-here" to create remote to the main project
+6) "git remote add origin paste-URL_2-here" to create remote to your forked copy of the project
+7) "git pull upstream master" to get remote changes anyone else might've made
+8) "git push origin master" to push changes to your remote fork (not the main one)
+9)  After you push, on the GitHub website, go to your forked copy and on that page submit a pull request to the main project repository where it must be approved by the owner. When approved, the changes you submitted will be merged with the main copy. Although since you created the project you may approve yourself, but its best that someone else review your code before it's apporived.

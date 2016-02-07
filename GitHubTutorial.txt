@@ -28,5 +28,5 @@ On your terminal prompt
 6) "git push origin master" to initialize the remote repository with your code
 7) "git branch development" to create a branch named development
 8) "git checkout development" to switch to that branch named development (meaning commits will now be recorded on that branch)
-9)  you can now submit changes to this branch with "git push origin development"
+9)  you can now submit changes to this branch with "git push origin development" but make sure to type "git pull origin master" to get the latest changes
 10) to merge your changes with the main branch, you can submit a pull request on the GitHub website but make sure you are doing it from the correct branch (in this example, the "development" branch).
